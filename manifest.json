@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Adri's IMDB Redirect",
-  "version": "1.0",
+  "version": "1.1",
   "permissions": ["storage", "tabs", "scripting"],
   "host_permissions": ["*://*.imdb.com/title/tt*/"],
   "key": "a7b8e3d0-907f-47b9-8f0f-9acacb96d3a5",
