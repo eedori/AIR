@@ -1,11 +1,15 @@
 (async function () {
-  const match = window.location.href.match(/title\/(tt\d+)/);
-  if (!match) return;
+  const filmIdMatch = window.location.pathname.match(/\/title\/(tt\d+)/);
+  const filmId = filmIdMatch ? filmIdMatch[1] : null;
 
-  const filmId = match[1];
+  console.log("Detected film ID:", filmId);
+
+  if (!filmId) return;
+
   const { redirectUrl } = await chrome.storage.local.get("redirectUrl");
 
   if (!redirectUrl || !redirectUrl.includes("{id}")) return;
+
 
   const btn = document.createElement("button");
   btn.innerText = "🎬 Redirect ID";
