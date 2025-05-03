@@ -10,18 +10,26 @@ Adri's IMDB Redirect (AIR) is a Chrome extension that allows users to redirect I
 
 ## Installation
 
-AIR is still awaiting AMO signing to be a fully signed firefox extension.
+### Release Version
+#### Firefox
 
-Currently, cloning the entire release and loading it as a temporary firefox / chrome extension works. Expect release shortly, however.
+1. Download the release version from the right handside.
+2. Open Firefox and navigate to `about:addons`.
+3. Click the cogwheel and select  `Install Add-on from file`
 
-### Chrome
+#### Chrome
+
+idk. havent looked :P
+
+### Unsigned / Manual 
+#### Chrome
 
 1. Clone or download this repository to your local machine.
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** in the top-right corner.
 4. Click **Load unpacked** and select the folder containing this project.
 
-### Firefox
+#### Firefox
 
 1. Clone or download this repository to your local machine.
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
